@@ -1,0 +1,27 @@
+{
+  "name": "ameliefinal",
+  "version": "1.0.0",
+  "main": "database-initializer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Amelie",
+  "license": "ISC",
+  "dependencies": {
+    "compass": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "connect-mongodb-session": "^3.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongo": "^0.1.0",
+    "mongodb": "^4.2.1",
+    "mongoose": "^6.1.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "description": ""
+}
