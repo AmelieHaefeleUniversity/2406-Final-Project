@@ -1,0 +1,14 @@
+html(lang ="en")
+    head 
+        meta(charset="UTF-8")
+        title Register
+    body 
+        include ./partials/header   
+        h3 Register here! 
+        h4 Please not you may not take the same username as another user! 
+        form(action="/register" method="post")
+            p Username: 
+                input(input type="text" name="username" required)
+            p Password 
+                input(input type="password" name="password" required)
+            button(type="submit") Submit

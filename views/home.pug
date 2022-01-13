@@ -1,0 +1,9 @@
+html(lang ="en")
+    head 
+        meta(charset="UTF-8")
+        title home
+    body 
+        include ./partials/header   
+        h1 Welcome Home!
+        if(session.loggedin)
+            p= session.username 

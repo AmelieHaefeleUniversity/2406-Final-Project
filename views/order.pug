@@ -1,0 +1,17 @@
+html(lang ="en")
+    head 
+        meta(charset="UTF-8")
+        title home
+    body(onload = "getSingleUser()")
+        include ./partials/header  
+
+        h3 Ordered by #{order.userWhoOrdered}
+        h2= order.restaurantName
+        p Subtotal: #{order.subtotal}
+        p Total: #{order.total}
+        p Tax: #{order.tax}
+        p Delivery Fee: #{order.fee}
+        for items in order.orderItems
+            p Item: #{items.name} Quantity: #{items.quantity}
+            
+

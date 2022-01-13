@@ -1,0 +1,25 @@
+html(lang ="en")
+    head 
+        meta(charset="UTF-8")
+        title User Profile
+        script(src ="server.js")
+    body(onload = "getOrder()")
+        include ./partials/header
+        h1 User Profile 
+        if (ownPage)
+            h4 Set Privacy 
+            form(action="/users/"+ user._id method="post")
+                input(type="radio", name="privacy", value = "true", id="true")
+                label(for="true") On 
+                br
+                input(type="radio", name="privacy", value = "false", id="false")
+                label(for="false") Off
+                br
+                button(type="submit") Submit
+        h2 Username: 
+        h3= user.username 
+        if user.orderHistory != null 
+            for order in user.orderHistory
+                a(href='/order/' + order._id) #{order._id}
+                br 
+                     

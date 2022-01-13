@@ -1,0 +1,13 @@
+html(lang = "en")
+    title All Users 
+    script(src ="server.js")
+
+
+    body(onload = "getUsers()")
+    include ./partials/header
+    h1 All Users
+    for u in users 
+        a(href='/users/' + u._id) #{u.username}
+        br
+    
+    
